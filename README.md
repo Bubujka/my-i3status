@@ -26,7 +26,7 @@ bar {
 }
 ```
 
-Create **~/.myi3status.js** or [~/.myi3status/index.js**](https://github.com/Bubujka/dotmyi3status/blob/master/index.js):
+Create **~/.myi3status.js** or [~/.myi3status/index.js](https://github.com/Bubujka/dotmyi3status/blob/master/index.js):
 
 ```js
 module.exports = function(data) {
