@@ -1,14 +1,12 @@
 #!/usr/bin/env node
 var child_process = require('child_process');
-var fs = require('fs');
 var path = require('path');
-var userfilepath = path.join(process.env.HOME, '.myi3status.js');
-var fn;
+var fn = function(d) {return d; };
 
-if(fs.existsSync(userfilepath)){
-  fn = require(userfilepath);
-}else{
-  fn = function(d) {return d; };
+if(path.join(process.env.HOME, '.myi3status/')){
+  fn = require(path.join(process.env.HOME, '.myi3status/'));
+}else if(path.join(process.env.HOME, '.myi3status.js')){
+  fn = require(process.env.HOME, '.myi3status.js');
 }
 
 child_process

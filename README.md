@@ -10,7 +10,7 @@ node module for wrapping i3status
 npm i -g my-i3status
 ```
 
-In ~/.i3status.conf change output_format to "i3bar"
+In **~/.i3status.conf** change output_format to "i3bar"
 
 ```
 general {
@@ -18,7 +18,7 @@ general {
 }
 ```
 
-In ~/.i3/config change status_command:
+In **~/.i3/config** change status_command:
 
 ```
 bar {
@@ -26,7 +26,7 @@ bar {
 }
 ```
 
-Create ~/.myi3status.js:
+Create **~/.myi3status.js** or [~/.myi3status/index.js**](https://github.com/Bubujka/dotmyi3status/blob/master/index.js):
 
 ```js
 module.exports = function(data) {
@@ -43,5 +43,3 @@ module.exports = function(data) {
   return data;
 };
 ```
-
-
